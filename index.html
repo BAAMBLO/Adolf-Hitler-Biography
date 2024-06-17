@@ -1,0 +1,108 @@
+<!-- Name: Krish Davra  |  Student Number: 8985706 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The life of Adolf Hitler">
+    <meta name="keywords" content="Adolf Hitler, World War II, Nazi Germany, Holocaust">
+    <title>Adolf Hitler</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Adolf Hitler</h1>
+    </header>
+
+    <main>
+        <section id="biography">
+            <h2>Biography</h2>
+            <blockquote cite="https://www.britannica.com/biography/Adolf-Hitler">Adolf Hitler (April 20, 1889 - April
+                30, 1945) was the leader of the Nazi Party and served as Chancellor
+                and Führer of Germany from 1933 until his death in 1945. Born in Braunau am Inn, Austria, Hitler rose to
+                power in Germany as head of the National Socialist German Workers' Party. His ideology centered on the
+                concepts of territorial expansion and racial supremacy, leading to aggressive foreign policies and the
+                initiation of World War II with the invasion of Poland in 1939. Hitler's regime was responsible for the
+                Holocaust, the systematic genocide of six million Jews and millions of other victims, marking one of
+                history's darkest chapters.</blockquote>
+        </section>
+
+        <section id="Image">
+            <h2>Image</h2>
+            <figure>
+                <img src="Adolf Hitler.jpeg"
+                    alt="Adolf Hitler in his early life">
+                <figcaption>Adolf Hitler in his early life</figcaption>
+            </figure>
+        </section>
+
+        <section id="Quote">
+            <h2>Famous Quote</h2>
+            <q cite="https://www.brainyquote.com/quotes/adolf_hitler_393185">Those who want to live, let them
+                fight.</q>
+        </section>
+
+        <section id="Video">
+            <h2>Video</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/m1vXAPxPmL8" frameborder="0"
+                allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <aside>
+        <section id="resources">
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="https://www.history.com/topics/world-war-ii/adolf-hitler-1" target="_blank"
+                        title="Adolf Hitler on History.com">History.com</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Adolf_Hitler" target="_blank"
+                        title="Adolf Hitler on Wikipedia">Wikipedia</a></li>
+                <li><a href="https://www.britannica.com/biography/Adolf-Hitler" target="_blank"
+                        title="Adolf Hitler on Britannica">Britannica</a></li>
+            </ul>
+        </section>
+
+        <section id="contactForm">
+            <h2>Contact</h2>
+            <form action="submitForm.php" method="post">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required
+                    placeholder="Enter your name"><br>
+
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required placeholder="Enter your email"
+                    autofocus><br>
+
+                <label for="phone" class="form-label">Phone:</label>
+                <input type="tel" id="phone" name="phone" class="form-control"><br>
+
+                <label for="message" class="form-label">Message:</label>
+                <textarea id="message" name="message" class="form-control" required></textarea><br>
+
+                <label for="contact-method" class="form-label">Preferred Method of Contact:</label>
+                <select id="contactMethod" name="contactMethod" class="form-control">
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                    <option value="none">No preference</option>
+                </select><br>
+
+                <label for="robot" class="form-label">
+                    <input type="checkbox" id="robot" name="robot" required>
+                    I am not a robot
+                </label><br>
+
+                <input type="submit" value="Submit" class="form-control">
+            </form>
+        </section>
+    </aside>
+
+    <footer>
+        <p>&copy; Krish Davra 2024. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
