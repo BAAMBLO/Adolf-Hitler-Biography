@@ -1,0 +1,225 @@
+@import url('normalize.css');
+
+/* Name: Krish Davra  |  Student Number: 8985706 */
+
+html {
+    font: 20px/1.5 Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #fff;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header, footer {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #000 33.33%, #ff0000 33.33%, #ff0000 66.66%, #ff0 66.66%);
+}
+
+header h1, footer p {
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+footer p {
+    font-size: 0.8em;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: #000;
+}
+
+figure {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+figure img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+figure figcaption {
+    font-style: italic;
+    color: #777;
+}
+
+blockquote, q {
+    font-style: italic;
+    color: #555;
+    border-left: 3px solid #ccc;
+    padding-left: 10px;
+    margin-left: 10px;
+    box-shadow: -5px 0 5px -5px #333;
+}
+
+aside {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+aside h2 {
+    text-align: center;
+    font-style: italic;
+    font-variant: small-caps;
+    color: #333;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 5px 0;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+aside ul li a:hover {
+    color: #ff7e5f;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    margin-top: 5px;
+    color: #020093;
+}
+
+form input, form textarea, form select {
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #ff8834;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ff5555;
+}
+
+/* Layout for wide screens */
+#biography, #image {
+    box-sizing: border-box;
+}
+
+#biography {
+    width: 48%;
+    float: left;
+    margin-right: 2%;
+}
+
+#image {
+    width: 48%;
+    float: left;
+}
+
+#quote, #video {
+    width: 48%;
+    float: left;
+    margin-right: 2%;
+}
+
+#video {
+    width: 48%;
+}
+
+#resources {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#contactForm {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Ensure the footer clears floats */
+footer {
+    clear: both;
+}
+
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    footer p {
+        font-size: 0.7em;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    #biography, #image, #quote, #video, #resources {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+    #biography, #image {
+        margin: 0;
+    }
+
+    #quote, #video {
+        margin: 0;
+    }
+}
